@@ -1,6 +1,6 @@
     /*----- constants -----*/
     const wordBank = ["nebula", "comet", "planet", "star", "asteroid", "meteor", "galaxy", "gravity", "universe", "moon", "constellation"]
-    
+    const guessesRemaning = 10;
 
 
 
@@ -16,9 +16,15 @@
     var remainingGuesses
 
     /*----- cached element references -----*/
-
-
-
+    const scoreEls = {
+        wins: document.querySelector("#winstracker"),
+        losses: document.querySelector("#losstracker"),
+    }
+    // console.log(scoreEls);
+    const guessedEls = {
+        wrong: document.querySelector("#playerguesses"),
+    }
+    console.log(guessedEls);
 
     /*----- event listeners -----*/
 
