@@ -2,4 +2,39 @@
     box-sizing: border-box;
   }
 
-  
+
+  body {
+    background-image: url("https://wallpaperaccess.com/full/21523.jpg");
+    width: 100%
+  }
+
+  h1 {
+    font-size: 43px;
+    border: solid 5px white ;
+    text-align: center;
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 15px;
+    font-family: 'Space Mono', monospace;
+    color: aliceblue;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+  }
+
+  h2 {
+    font-family: 'Space Mono', monospace;
+    font-size: 30px;
+    padding-top: 10px;
+    color: aliceblue;
+    text-align: center;
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+  }
+
+  h3 {
+    
+  }
