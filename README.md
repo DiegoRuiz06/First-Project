@@ -1,6 +1,6 @@
 # First-Project
 <h1>Guess the word game: Space Edition</h1>
-
+<a href="https://imgur.com/Db2dbDA"><img src="https://i.imgur.com/Db2dbDA.png" title="source: imgur.com" /></a>
 
 Using HTML, CSS, and JavaScript my task was to create a web browser game. In my case I chose to create a "Guess the Word" game (formely known s Hangman). When deciding on the topic in which my word bank would consist of, I picked space related terms because it's one of my favorite topics.
 
