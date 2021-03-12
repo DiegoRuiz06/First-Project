@@ -20,12 +20,11 @@
         wins: document.querySelector("#winstracker"),
         losses: document.querySelector("#losstracker"),
     }
-    // console.log(scoreEls);
+    
     const guessedEls = {
         wrong: document.querySelector("#playerguesses"),
     }
-    // console.log(guessedEls);
-
+    
     /*----- event listeners -----*/
     document.onkeyup = function (evt) {
         let guesses = String.fromCharCode(evt.keyCode).toLowerCase();
@@ -33,7 +32,6 @@
         checkLetters(guesses);
         //process wins/loss
         finished();
-        console.log(guesses);
 
         //show the letter that are incorrect on screen
         document.getElementById("playerguesses").innerHTML = " " + wrongGuess.join(" ");
@@ -43,12 +41,11 @@
 
 
     /*----- functions -----*/
-function render() {
+    function render() {
     //generate random word from words array//
     randomWord = wordBank[Math.floor(Math.random() * wordBank.length)];
     //split the individual word into seperate arrays, and put in new array//
     lettersOfWord = randomWord.split("");
-    //use something to generate "_" for each letter in the array stored in the blanks (maybe a loop?)
 
     //store length of word in blanks, for later use
     blanks = lettersOfWord.length; 
@@ -59,22 +56,17 @@ function render() {
 
     //show the "_" within HTML
     document.getElementById("currentWord").innerHTML = " " + blanksAndCorrect.join(" ");
-    //console logs:
-    // console.log(randomWord);
-    // console.log(lettersOfWord);
-    // console.log(blanks);
-    // console.log(blanksAndCorrect);
 }
 
-function reset() {
+    function reset() {
     guessesRemaning = 10;
     wrongGuess = [];
     blanksAndCorrect = [];
     render()
 }
 
-//If else to see if letter selected matches the random word
-function checkLetters(letter) {
+    //If else to see if letter selected matches the random word
+    function checkLetters(letter) {
     let letterInWord = false;
     //if the generated randomword is equal to the letter entered then the variable is true
     for (let i = 0; i < blanks; i++) {
